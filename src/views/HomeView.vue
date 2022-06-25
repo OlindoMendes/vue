@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <TrendingRepo :searchString="homeSearchString"/>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import TrendingRepo from '../components/TrendingRepo'
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      homeSearchString: 'ruby'
+    }
   },
+  components: {
+    TrendingRepo
+  }
 }
 </script>

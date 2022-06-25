@@ -9,7 +9,7 @@ const AUTH_TOKEN = 'apollo-token'
 
 // Http endpoint
 // const httpEndpoint = 'https://api.graphql.jobs/'
-const httpEndpoint = ' https://api.github.com/graphql'
+const httpEndpoint = 'https://api.github.com/graphql'
 
 // Config
 const defaultOptions = {
@@ -38,7 +38,7 @@ const defaultOptions = {
   // getAuth: (tokenName) => ...
   getAuth: () => {
     // get the authentication token from local storage if it exists
-    const token = process.env.VUE_APP_GITHUB_GRAPHQL_AUTH_TOKEN
+    const token = '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'
     // return the headers to the context so httpLink can read them
     if (token) {
       return 'Bearer ' + token
